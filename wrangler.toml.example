@@ -1,0 +1,6 @@
+name = "currency-api"
+compatibility_date = "2023-12-01"
+
+kv_namespaces = [
+{ binding = "RATES", id = "<YOUR_KV_KEY>", preview_id = "<YOUR_KV_PREVIEW_KEY>" },
+]

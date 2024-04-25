@@ -4,6 +4,8 @@
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
+    "currency.js": "^2.0.4",
+    "dayjs": "^1.11.10",
     "hono": "^4.2.7"
   },
   "devDependencies": {
