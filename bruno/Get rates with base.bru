@@ -1,0 +1,15 @@
+meta {
+  name: Get rates with base
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://currency-api.brachkow.workers.dev/?base=RUB
+  body: none
+  auth: none
+}
+
+query {
+  base: RUB
+}
