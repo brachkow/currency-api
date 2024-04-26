@@ -16,7 +16,7 @@ app.get(
   zValidator(
     'query',
     z.object({
-      date: z.string().optional(),
+      date: z.string().date().optional(),
       base: z.enum(CurrencyValues).optional(),
     }),
   ),
