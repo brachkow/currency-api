@@ -5,11 +5,13 @@ import currencyjs from 'currency.js';
 import { z } from 'zod';
 import { Hono } from 'hono';
 import { zValidator } from '@hono/zod-validator';
+import { cors } from 'hono/cors';
 
 const CurrencyValues = Object.values(Currency) as [string, ...string[]];
 
 const app = new Hono<{ Bindings: Bindings }>();
 app.use(logger());
+app.use(cors());
 
 app.get(
   '/',
